@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #ecf6f1;
+        }
+        #maindiv{
+            background-color: white;
+            width: 74%;
+            margin: auto;
+            margin-top: 140px;
+            border: 1px solid black;
+            border-radius: 10px;
+
+        }
+        h2{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            margin-bottom: 50px;
+
+        }
+      
+        .spancss{
+            text-align: center;
+            color: #5bb06c;
+            margin-left: 20%;
+            margin-right: 20%;
+            background-color: #ecf6f1;
+            padding: 10px;  
+        }
+        .spancss:hover{
+            background-color: #5bb06c;
+            color: white;
+        }
+        #btn{
+            text-align: center;
+            background-color: transparent;
+            margin-left: 33%;
+            color: black; 
+            width: 30%;
+            margin-top: 40px;
+            height: 50px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        } 
+        #btn:hover{
+            background-color: #d75879;
+            color: white;
+        }
+        #result{
+            width: 400px;
+            text-align: center;
+            margin-top: 50px;
+            margin: auto;
+        }
+        
+       
+    </style>
+
+</head>
+<body>
+    <!-- <div id="disabled"><span>0</span>/100</div> -->
+    <div id="maindiv">
+        <h2 id="question1"></h2>
+        <div class="spancss">
+            <input type="radio" name="option" id="input" class="input1">
+            <label for="#input" id="option1"></label>
+          </div>
+
+          <div class="spancss">
+            <input type="radio" name="option" id="input" class="input1">
+            <label for="#input" id="option2"></label>
+          </div>
+
+          <div class="spancss">
+            <input type="radio" name="option" id="input" class="input1">
+            <label for="#input" id="option3"></label>
+          </div>
+
+        <button id="btn" onclick="nextQuestion()">NEXT QUESTION</button>
+    </div>
+    <div id="result">
+
+    </div>
+    
+</body>
+<script src="quiz.js"></script>
+</html>
